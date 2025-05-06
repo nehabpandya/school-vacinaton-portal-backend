@@ -1,0 +1,6 @@
+@school_vacinaton_portal_backend_HostAddress = http://localhost:5163
+
+GET {{school_vacinaton_portal_backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
