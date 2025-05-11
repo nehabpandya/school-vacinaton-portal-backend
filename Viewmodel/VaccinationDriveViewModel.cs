@@ -8,5 +8,9 @@
         public string? Description { get; set; }
         public DateOnly Date { get; set; }
         public string? Location { get; set; }
+        public int? Dose { get; set; }
+
+       // public ICollection<VaccinationRecord>? VaccinationRecords { get; set; }
+
     }
 }

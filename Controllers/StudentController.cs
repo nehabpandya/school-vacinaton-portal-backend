@@ -35,11 +35,8 @@ namespace school_vacinaton_portal_backend.Controllers
                 studentsTbl.ParentName = student.ParentName;
                 studentsTbl.ContactNumber = student.ContactNumber;
                 studentsTbl.Gender = student.Gender;
-                studentsTbl.Vaccinated = student.Vaccinated;
-               // studentsTbl.VaccineType = student.VaccineType;
-               // studentsTbl.VaccinationDate = student.VaccinationDate;
-               // studentsTbl.DoseNumber = student.DoseNumber;
                 studentsTbl.MedicalNote = student.MedicalNote;
+                studentsTbl.timestamp = DateTime.Now;
                 _context.Add(studentsTbl);
                 _context.SaveChanges();
                 return Ok(new { message = "Student saved successfully", student });

@@ -21,13 +21,11 @@ public partial class StudentsTbl
 
     public string Gender { get; set; } = null!;
 
-    public bool Vaccinated { get; set; }
-
-    public string? VaccineType { get; set; }
-
-    public int? DoseNumber { get; set; }
-
     public DateOnly? VaccinationDate { get; set; }
 
     public string? MedicalNote { get; set; }
+
+    public DateTime? timestamp { get; set; }
+
+    public virtual ICollection<VaccinationRecordsTbl> VaccinationRecordsTbls { get; set; } = new List<VaccinationRecordsTbl>();
 }
